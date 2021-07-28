@@ -1,0 +1,96 @@
+@import url(menu.css);
+
+.container-grid-novias{
+    display: grid;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+        "img1 img2 img3"
+        "img4 img5 img6"
+}
+
+.container-grid-novias{
+    width: 90%;
+    height: 90%;
+}
+
+.contenedor img{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#grid .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#bienvenidos h2{
+    text-align: center;
+}
+
+#bienvenidos p{
+    text-align: justify;
+    text-justify: inter-palabra;
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size-adjust: auto;
+}
+
+#testimonios .contenedor{
+    margin-top: 30px;
+    border: 2px solid black;
+    text-align: justify;
+    text-justify: inter-palabra;
+}
+
+#testimonios .contenedor h1{
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+#testimonios .contenedor h2{
+
+    justify-content: center;
+    text-align: center;
+}
+#testimonios .contenedor p{
+    padding: 10px;
+}
+
+.img-1{
+    grid-area: img1;
+}
+.img-2{
+    grid-area: img2;
+}
+.img-3{
+    grid-area: img3;
+}
+.img-4{
+    grid-area: img4;
+}
+.img-5{
+    grid-area: img5;
+}
+.img-6{
+    grid-area: img6;
+}
+
+@media screen and (max-width:700px){
+    
+}
+
+@media screen and (min-width:900px){
+    .contenedor, .contenedor1{
+        width: 90%;
+    }
+    .container-grid-novias{
+        width: 90%;
+        height: 90%;
+    }
+}
